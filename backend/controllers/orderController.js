@@ -6,7 +6,7 @@ import Stripe from "stripe";
 // Load environment variables before initializing Stripe
 dotenv.config({ quiet: true });
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.example.STRIPE_SECRET_KEY);
 
 // placing user order for frontend
 export const placeOrder = async (req, res) => {
